@@ -162,12 +162,12 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 33px 30px;
+    /* flex-wrap: wrap;
+    padding: 33px 30px; */
 }
 
 .wrap-table100 {
-    width: 1170px;
+    width: 100%;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -186,7 +186,7 @@ td {
     padding-right: 10px;
 }
 
-.column1 {
+/* .column1 {
     width: 33%;
     padding-left: 40px;
 }
@@ -205,7 +205,7 @@ td {
 
 .column5 {
     width: 13%;
-}
+} */
 
 .table100-head th {
     padding-top: 18px;
@@ -232,7 +232,7 @@ td {
 }
 
 .table100-body {
-    max-height: 585px;
+    max-height: 768px;
     overflow: auto;
 }
 
@@ -240,7 +240,7 @@ td {
 /*==================================================================
 [ Ver1 ]*/
 
-.table100.ver1 th {
+/* .table100.ver1 th {
     font-family: Lato-Bold;
     font-size: 18px;
     color: #fff;
@@ -258,11 +258,11 @@ td {
 
 .table100.ver1 .table100-body tr:nth-child(even) {
     background-color: #f8f6ff;
-}
+} */
 
 /*---------------------------------------------*/
 
-.table100.ver1 {
+/* .table100.ver1 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -282,13 +282,13 @@ td {
 
 .table100.ver1 .ps__rail-y .ps__thumb-y::before {
     background-color: #cccccc;
-}
+} */
 
 
 /*==================================================================
 [ Ver2 ]*/
 
-.table100.ver2 .table100-head {
+/* .table100.ver2 .table100-head {
     box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
@@ -314,11 +314,11 @@ td {
 
 .table100.ver2 .table100-body tr {
     border-bottom: 1px solid #f2f2f2;
-}
+} */
 
 /*---------------------------------------------*/
 
-.table100.ver2 {
+/* .table100.ver2 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -338,7 +338,7 @@ td {
 
 .table100.ver2 .ps__rail-y .ps__thumb-y::before {
     background-color: #cccccc;
-}
+} */
 
 /*==================================================================
 [ Ver3 ]*/
@@ -392,7 +392,7 @@ td {
 
 /*==================================================================
 [ Ver4 ]*/
-.table100.ver4 {
+/* .table100.ver4 {
     margin-right: -20px;
 }
 
@@ -423,10 +423,10 @@ td {
 
 .table100.ver4 .table100-body tr {
     border-bottom: 1px solid #f2f2f2;
-}
+} */
 
 /*---------------------------------------------*/
-
+/* 
 .table100.ver4 {
     overflow: hidden;
 }
@@ -445,12 +445,12 @@ td {
 
 .table100.ver4 .ps__rail-y .ps__thumb-y::before {
     background-color: #cccccc;
-}
+} */
 
 
 /*==================================================================
 [ Ver5 ]*/
-.table100.ver5 {
+/* .table100.ver5 {
     margin-right: -30px;
 }
 
@@ -515,10 +515,10 @@ td {
 .table100.ver5 .table100-head th {
     padding-top: 25px;
     padding-bottom: 25px;
-}
+} */
 
 /*---------------------------------------------*/
-
+/* 
 .table100.ver5 {
     overflow: hidden;
 }
@@ -537,8 +537,19 @@ td {
 
 .table100.ver5 .ps__rail-y .ps__thumb-y::before {
     background-color: #cccccc;
-}
+} */
 
+
+.title, .notes {
+    padding-left: 40px;
+    width: 30%;
+}
+.version,
+.region,
+.crc32,
+.status {
+    width: 10%;
+}
 
 /* MARCOLINO */
 div {
