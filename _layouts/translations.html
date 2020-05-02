@@ -27,8 +27,8 @@ layout: default
 							<th class="sorter-false filter-false">Region</th>
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Language">Language</th>
-									<th class="filter-select filter-exact"
-											data-placeholder="Filter by Translator">Released by</th>
+							<th class="filter-select filter-exact"
+									data-placeholder="Filter by Translator">Released by</th>
 							<th>CRC32</th>
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Status">Status</th>
@@ -94,7 +94,11 @@ layout: default
 							<td class="crc32">{{game.crc32}}</td>
 							<td class="status">{{game.status}}</td>
 							<td> {{game.notes}} </td>
-							<td>{{game.patchfile}}</td>
+							{% if game.patchfile %}
+							<td><a href="{{game.patchfile}}">Translation Patch</a></td>
+							{% else %}
+							<td>-</td>
+							{% endif %}
 						</tr>
 						{% endfor %}
 					</tbody>
