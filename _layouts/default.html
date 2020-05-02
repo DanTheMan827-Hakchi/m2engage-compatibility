@@ -122,6 +122,9 @@
 				return false;
 			});
 		});
+
+		var linkToFocus = document.getElementsByClassName('download_link licensed');
+			linkToFocus.focus();
 	</script>
 	{% seo %}
 </head>
@@ -141,7 +144,7 @@
 			<h2 id="project_tagline">
 				{{ site.description | default: site.github.project_tagline }}</h2>
 
-			{% if site.show_downloads %}
+			<!-- {% if site.show_downloads %}
 			<section id="downloads">
 				<a class="zip_download_link"
 					 href="{{ site.github.zip_url }}">Download this project as a .zip
@@ -155,20 +158,20 @@
 					 href="{{ site.github.tar_url }}">Download this project as a tar.gz
 					file</a>
 			</section>
-			{% endif %}
+			{% endif %} -->
 			<section id="downloads">
-				<a class="download_link licensed"
-					 href="{{ site.licensed }}">Licensed games</a>
-				<a class="download_link unlicensed"
-					 href="{{ site.unlicensed }}">Unlicensed games</a>
-				<a class="download_link hacks"
-					 href="{{ site.hacks }}">Hacks</a>
-				<a class="download_link translations"
-					 href="{{ site.translations }}">Translations</a>
-				<a class="download_link betas"
-					 href="{{ site.betas }}">Betas</a>
 				<a class="download_link paltontsc"
 					 href="{{ site.paltontsc }}">60Hz</a>
+					 <a class="download_link hacks"
+					 href="{{ site.hacks }}">Hacks</a>
+					 <a class="download_link translations"
+					 href="{{ site.translations }}">Translations</a>
+					 <a class="download_link betas"
+					 href="{{ site.betas }}">Betas</a>
+					 <a class="download_link unlicensed"
+					 href="{{ site.unlicensed }}">Unlicensed games</a>
+					 <a class="download_link licensed"
+							href="{{ site.licensed }}">Licensed games</a>
 			</section>
 		</header>
 	</div>

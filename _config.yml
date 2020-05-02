@@ -2,8 +2,8 @@ title: Mega Drive / Genesis Mini Compatibility List
 theme: jekyll-theme-slate
 show_downloads: false
 licensed: https://defkorns.github.io/m2engage-compatibility
-unlicensed: https://defkorns.github.io/m2engage-compatibility
-betas: https://defkorns.github.io/m2engage-compatibility
-translations: https://defkorns.github.io/m2engage-compatibility
-hacks: https://defkorns.github.io/m2engage-compatibility/hacks.html
+unlicensed: unlicensed.html
+betas: betas.html
+translations: translations.html
+hacks: hacks.html
 paltontsc: paltontsc.html
