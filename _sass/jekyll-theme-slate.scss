@@ -419,7 +419,7 @@ Full-Width Styles
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top left;
     }
-    .selected {
+    &.selected {
       background: url(../images/sprite_download.png) no-repeat top left;
       &:hover {
         background: url(../images/sprite_download.png) no-repeat bottom left;
