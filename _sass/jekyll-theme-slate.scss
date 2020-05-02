@@ -419,32 +419,38 @@ Full-Width Styles
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top left;
     }
-	}
-	&.unlicensed {
+    .selected {
+      background: url(../images/sprite_download.png) no-repeat top left;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom left;
+      }
+    }
+  }
+  &.unlicensed {
     background: url(../images/sprite_download.png) no-repeat bottom center;
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top center;
     }
-	}
-	&.hacks {
+  }
+  &.hacks {
     background: url(../images/sprite_download.png) no-repeat bottom right;
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top right;
     }
-	}
-	&.translations {
+  }
+  &.translations {
     background: url(../images/sprite_download2.png) no-repeat bottom left;
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top left;
     }
-	}
-	&.betas {
+  }
+  &.betas {
     background: url(../images/sprite_download2.png) no-repeat bottom center;
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top center;
     }
-	}
-	&.paltontsc {
+  }
+  &.paltontsc {
     background: url(../images/sprite_download2.png) no-repeat bottom right;
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top right;

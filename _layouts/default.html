@@ -122,9 +122,6 @@
 				return false;
 			});
 		});
-
-		var linkToFocus = document.getElementsByClassName('download_link licensed');
-			linkToFocus.focus();
 	</script>
 	{% seo %}
 </head>
@@ -170,7 +167,7 @@
 					 href="{{ site.betas }}">Betas</a>
 					 <a class="download_link unlicensed"
 					 href="{{ site.unlicensed }}">Unlicensed games</a>
-					 <a class="download_link licensed"
+					 <a class="download_link licensed selected"
 							href="{{ site.licensed }}">Licensed games</a>
 			</section>
 		</header>
