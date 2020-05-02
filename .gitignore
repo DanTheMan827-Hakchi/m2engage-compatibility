@@ -1,2 +1,6 @@
 Untitled-1.csv
 Untitled-1.html
+_site
+.sass-cache
+Gemfile.lock
+*.gem
