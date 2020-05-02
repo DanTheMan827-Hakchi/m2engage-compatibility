@@ -431,11 +431,23 @@ Full-Width Styles
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top center;
     }
+    &.selected {
+      background: url(../images/sprite_download.png) no-repeat top center;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom center;
+      }
+    }
   }
   &.hacks {
     background: url(../images/sprite_download.png) no-repeat bottom right;
     &:hover {
       background: url(../images/sprite_download.png) no-repeat top right;
+    }
+    &.selected {
+      background: url(../images/sprite_download.png) no-repeat top right;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom right;
+      }
     }
   }
   &.translations {
@@ -443,17 +455,35 @@ Full-Width Styles
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top left;
     }
+    &.selected {
+      background: url(../images/sprite_download.png) no-repeat top left;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom left;
+      }
+    }
   }
   &.betas {
     background: url(../images/sprite_download2.png) no-repeat bottom center;
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top center;
     }
+    &.selected {
+      background: url(../images/sprite_download.png) no-repeat top center;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom center;
+      }
+    }
   }
   &.paltontsc {
     background: url(../images/sprite_download2.png) no-repeat bottom right;
     &:hover {
       background: url(../images/sprite_download2.png) no-repeat top right;
+    }
+    &.selected {
+      background: url(../images/sprite_download.png) no-repeat top right;
+      &:hover {
+        background: url(../images/sprite_download.png) no-repeat bottom right;
+      }
     }
   }
 }
