@@ -1,4 +1,4 @@
-GAME TITLE,REGION,LANGUAGE,RELEASED BY,CRC32,STATUS,NOTES,PATCH FILE,,,,,,,,,,,,,,,,,
+title,region,language,releaseby,crc32,status,notes,patchfile,,,,,,,,,,,,,,,,,
 "Addams Family, The","USA, Europe",Brazil,Tradu-GameX,1FA29BBB,Works,,,,,,,,,,,,,,,,,,,
 Advanced Military Commander,Japan,English,Nebelwurfer HQ,785B8F9A,Works,,https://www.romhacking.net/translations/564/,,,,,,,,,,,,,,,,,
 After Burner II,"USA, Europe",Brazil,,AFDF47C9,Doesn't Work,Game locks up after pressing start on Title Screen,,,,,,,,,,,,,,,,,,
