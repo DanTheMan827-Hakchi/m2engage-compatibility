@@ -135,12 +135,12 @@
 			<!-- {% if site.github.is_project_page %}
 		            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 		          {% endif %} -->
-	
+
 			<h1 id="project_title">
 				{{ site.title | default: site.github.repository_name }}</h1>
 			<h2 id="project_tagline">
 				{{ site.description | default: site.github.project_tagline }}</h2>
-	
+
 			<!-- {% if site.show_downloads %}
 					<section id="downloads">
 						<a class="zip_download_link"
@@ -157,29 +157,25 @@
 					</section>
 					{% endif %} -->
 			<section id="downloads">
-				<!-- <a class="download_link paltontsc" -->
-					<a class="btn btn-primary" 
-					 href="{{ site.paltontsc }}">60Hz</a>
-				<!-- <a class="download_link hacks" -->
-					<a class="btn btn-primary" 
-					 href="{{ site.hacks }}">Hacks</a>
-				<!-- <a class="download_link translations" -->
-					<a class="btn btn-primary" 
+
+
+				<a class="btn btn-primary"
 					 href="{{ site.translations }}">Translations</a>
-				<!-- <a class="download_link betas" -->
-					<a class="btn btn-primary" 
-					 href="{{ site.betas }}">Betas</a>
-				<!-- <a class="download_link unlicensed" -->
-					<a class="btn btn-primary" 
-					 href="{{ site.unlicensed }}">Unlicensed games</a>
-				<!-- <a class="download_link licensed" -->
-					<a class="btn btn-primary" 
+				<a class="btn btn-primary"
 					 href="{{ site.licensed }}">Licensed games</a>
+				<a class="btn btn-primary"
+					 href="{{ site.unlicensed }}">Unlicensed games</a>
+				<a class="btn btn-primary"
+					 href="{{ site.betas }}">Betas</a>
+				<a class="btn btn-primary"
+					 href="{{ site.hacks }}">Hacks</a>
+				<a class="btn btn-primary"
+					 href="{{ site.paltontsc }}">60Hz</a>
 
 			</section>
 		</header>
 	</div>
-{{content}}
+	{{content}}
 
 	<!-- FOOTER  -->
 	<div id="footer_wrap"
