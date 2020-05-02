@@ -251,7 +251,18 @@
 								</tr>
 							</tfoot>
 							<tbody>
-								{{ content }}
+								{% for game in site.data.licensed %}
+								<tr>
+									<td class="title">{{game.title}}</td>
+									<td class="region">{{game.region}}
+										<!--<span class="flag-icon flag-icon-jp">--></span>
+									</td>
+									<td class="version"> {{game.version}} </td>
+									<td class="crc32">{{game.crc32}}</td>
+									<td class="status">{{game.status}}</td>
+									<td> {{game.notes}} </td>
+								</tr>
+								{% endfor %}
 							</tbody>
 						</table>
 					</div>
