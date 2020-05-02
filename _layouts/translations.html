@@ -26,21 +26,26 @@ layout: default
 							<th>Title</th>
 							<th class="sorter-false filter-false">Region</th>
 							<th class="filter-select filter-exact"
-									data-placeholder="Filter by Version">Version</th>
+									data-placeholder="Filter by Language">Language</th>
+									<th class="filter-select filter-exact"
+											data-placeholder="Filter by Translator">Released by</th>
 							<th>CRC32</th>
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Status">Status</th>
 							<th class="sorter-false filter-false">Notes</th>
+							<th class="sorter-false filter-false">Patch File</th>
 						</tr>
 					</thead>
 					<tfoot>
 						<tr>
 							<th>Title</th>
 							<th>Region</th>
-							<th>Version</th>
+							<th>Language</th>
+							<th>Released By</th>
 							<th>CRC32</th>
 							<th>Status</th>
 							<th>Notes</th>
+							<th>Patch File</th>
 						</tr>
 						<tr>
 							<th colspan="6"
@@ -80,16 +85,24 @@ layout: default
 						</tr>
 					</tfoot>
 					<tbody>
-						{% for game in site.data.paltontsc %}
+						{% for game in site.data.translations %}
 						<tr>
+							<th>Title</th>
+							<th>Region</th>
+							<th>Language</th>
+							<th>Released By</th>
+							<th>CRC32</th>
+							<th>Status</th>
+							<th>Notes</th>
+							<th>Patch File</th>
 							<td class="title">{{game.title}}</td>
-							<td class="region">{{game.region}}
-								<!--<span class="flag-icon flag-icon-jp"></span>-->
-							</td>
-							<td class="version"> {{game.version}} </td>
+							<td class="region">{{game.region}}</td>
+							<td class="language"> {{game.language}} </td>
+							<td>{{game.releasedby}}</td>
 							<td class="crc32">{{game.crc32}}</td>
 							<td class="status">{{game.status}}</td>
 							<td> {{game.notes}} </td>
+							<td>{{game.patchfile}}</td>
 						</tr>
 						{% endfor %}
 					</tbody>
