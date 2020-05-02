@@ -197,7 +197,7 @@
                         </tr>
                     </tfoot>
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <td class="title">007 Shitou - The Duel</td>
                             <td class="region"><span class="flag-icon flag-icon-jp"></span></td>
                             <td class="version"> - </td>
@@ -14208,7 +14208,18 @@
                             <td class="crc32">1A761E67</td>
                             <td class="status">Works</td>
                             <td> - </td>
-                        </tr>
+												</tr> -->
+												{% for game in site.data.licensed %}
+												<tr>
+													<td class="title">{{game.title}}</td>
+													<td class="region"><span class="flag-icon flag-icon-jp"></span>
+													</td>
+													<td class="version"> - </td>
+													<td class="crc32">{{game.crc32}}</td>
+													<td class="status">{{game.status}}</td>
+													<td> - </td>
+												</tr>
+												{% endfor %}
                     </tbody>
                 </table>
             </div>
