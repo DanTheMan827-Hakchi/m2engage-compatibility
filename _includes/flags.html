@@ -107,7 +107,7 @@
 <span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
-{% elsif game.region == "" %}
+{% elsif game.region.size == 0 %}
 -
 {% else %}
 {{game.region}}
