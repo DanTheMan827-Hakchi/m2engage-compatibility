@@ -87,16 +87,7 @@ layout: default
 						<tr>
 							<td class="title">{{game.title}}</td>
 							<td class="region">
-								{% if game.region == "USA" %}
-								<!-- {{game.region}} -->
-								<span class="flag-icon flag-icon-us"></span>
-								{% elsif game.region == "Japan" %}
-								<span class="flag-icon flag-icon-jp"></span>
-								{% elsif game.region == "Brazil" %}
-								<span class="flag-icon flag-icon-br"></span>
-								{% else %}
-								{{game.region}}
-								{% endif %}
+								{% include flags.html %}
 							</td>
 							<td class="version"> {{game.version}} </td>
 							<td class="crc32">{{game.crc32}}</td>

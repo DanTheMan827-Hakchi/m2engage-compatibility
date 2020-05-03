@@ -1,78 +1,99 @@
 
 {% if game.region == "Asia" %}
-<span class="flag-icon flag-icon-cn"></span>&nbsp;
+<span class="flag-icon flag-icon-cn">{{game.region}}</span>&nbsp;
+<span class="flag-icon flag-icon-hk"></span>&nbsp;
+<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>&nbsp;
+<span class="flag-icon flag-icon-tw"></span>&nbsp;
+{% elsif game.region == "Asia, Korea" %}
+<span class="flag-icon flag-icon-cn">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-hk"></span>&nbsp;
 <span class="flag-icon flag-icon-jp"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>&nbsp;
 <span class="flag-icon flag-icon-tw"></span>&nbsp;
 {% elsif game.region == "Australia" %}
-<span class="flag-icon flag-icon-au"></span>
+<span class="flag-icon flag-icon-au">{{game.region}}</span>
 {% elsif game.region == "Brazil" %}
-<span class="flag-icon flag-icon-br"></span>
+<span class="flag-icon flag-icon-br">{{game.region}}</span>
 {% elsif game.region == "China" %}
-<span class="flag-icon flag-icon-cn"></span>
+<span class="flag-icon flag-icon-cn">{{game.region}}</span>
 {% elsif game.region == "Europe" %}
-<span class="flag-icon flag-icon-eu"></span>
+<span class="flag-icon flag-icon-eu">{{game.region}}</span>
 {% elsif game.region == "Europe, Asia" %}
-<span class="flag-icon flag-icon-eu"></span>&nbsp;
+<span class="flag-icon flag-icon-eu">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-cn"></span>&nbsp;
 <span class="flag-icon flag-icon-hk"></span>&nbsp;
 <span class="flag-icon flag-icon-jp"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>&nbsp;
 <span class="flag-icon flag-icon-tw"></span>
 {% elsif game.region == "Europe, Korea" %}
-<span class="flag-icon flag-icon-eu"></span>&nbsp;
+<span class="flag-icon flag-icon-eu">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
 {% elsif game.region == "France" %}
-<span class="flag-icon flag-icon-fr"></span>
+<span class="flag-icon flag-icon-fr">{{game.region}}</span>
 {% elsif game.region == "Germany" %}
-<span class="flag-icon flag-icon-de"></span>
+<span class="flag-icon flag-icon-de">{{game.region}}</span>
 {% elsif game.region == "Hong Kong" %}
-<span class="flag-icon flag-icon-hk"></span>
+<span class="flag-icon flag-icon-hk">{{game.region}}</span>
 {% elsif game.region == "Japan" %}
-<span class="flag-icon flag-icon-jp"></span>
-{% elsif game.region == "Japan, Europe" %}
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>
+{% elsif game.region == "Japan, Asia, Korea" %}
+<span class="flag-icon flag-icon-cn">{{game.region}}</span>&nbsp;
+<span class="flag-icon flag-icon-hk"></span>&nbsp;
 <span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>&nbsp;
+<span class="flag-icon flag-icon-tw"></span>&nbsp;
+{% elsif game.region == "Japan, Europe" %}
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
 {% elsif game.region == "Japan, Korea" %}
-<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
 {% elsif game.region == "Japan, USA" %}
-<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>
 {% elsif game.region == "Japan, USA, Korea" %}
-<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
 {% elsif game.region == "Korea" %}
-<span class="flag-icon flag-icon-kr"></span>
+<span class="flag-icon flag-icon-kr">{{game.region}}</span>
 {% elsif game.region == "Mexico" %}
-<span class="flag-icon flag-icon-mx"></span>
+<span class="flag-icon flag-icon-mx">{{game.region}}</span>
 {% elsif game.region == "Spain" %}
-<span class="flag-icon flag-icon-es"></span>
+<span class="flag-icon flag-icon-es">{{game.region}}</span>
 {% elsif game.region == "Sweden" %}
-<span class="flag-icon flag-icon-se"></span>
+<span class="flag-icon flag-icon-se">{{game.region}}</span>
 {% elsif game.region == "Taiwan" %}
-<span class="flag-icon flag-icon-tw"></span>
+<span class="flag-icon flag-icon-tw">{{game.region}}</span>
 {% elsif game.region == "USA" %}
-<span class="flag-icon flag-icon-us"></span>
+<span class="flag-icon flag-icon-us">{{game.region}}</span>
+{% elsif game.region == "USA, Asia, Korea" %}
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
+<span class="flag-icon flag-icon-cn"></span>&nbsp;
+<span class="flag-icon flag-icon-hk"></span>&nbsp;
+<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>&nbsp;
+<span class="flag-icon flag-icon-tw"></span>&nbsp;
 {% elsif game.region == "USA, Australia" %}
-<span class="flag-icon flag-icon-us"></span>&nbsp;
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-au"></span>
 {% elsif game.region == "USA, Europe" %}
-<span class="flag-icon flag-icon-us"></span>&nbsp;
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
 {% elsif game.region == "USA, Europe, Korea" %}
-<span class="flag-icon flag-icon-us"></span>&nbsp;
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
 {% elsif game.region == "USA, Korea" %}
-<span class="flag-icon flag-icon-us"></span>&nbsp;
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
 {% elsif game.region == "World" %}
-<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
+{% elsif game.region == '' %}
+-
 {% else %}
 {{game.region}}
 {% endif %}

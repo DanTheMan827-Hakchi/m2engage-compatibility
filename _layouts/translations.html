@@ -88,7 +88,9 @@ layout: default
 						{% for game in site.data.translations %}
 						<tr>
 							<td class="title">{{game.title}}</td>
-							<td class="region">{{game.region}}</td>
+							<td class="region">
+								{% include flags.html %}
+							</td>
 							<td class="language"> {{game.language}} </td>
 							<td>{{game.releasedby}}</td>
 							<td class="crc32">{{game.crc32}}</td>

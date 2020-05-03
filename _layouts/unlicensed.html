@@ -83,8 +83,8 @@ layout: default
 						{% for game in site.data.unlicensed %}
 						<tr>
 							<td class="title">{{game.title}}</td>
-							<td class="region">{{game.region}}
-								<!--<span class="flag-icon flag-icon-jp"></span>-->
+							<td class="region">
+								{% include flags.html %}
 							</td>
 							<td class="version"> {{game.version}} </td>
 							<td class="crc32">{{game.crc32}}</td>

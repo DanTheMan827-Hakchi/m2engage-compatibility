@@ -85,48 +85,6 @@ layout: default
 						<tr>
 							<td class="title">{{game.title}}</td>
 							<td class="region">
-								<!-- {% if game.region == "USA" %}
-								<span class="flag-icon flag-icon-us"></span>
-								{% elsif game.region == "Japan" %}
-								<span class="flag-icon flag-icon-jp"></span>
-								{% elsif game.region == "Europe" %}
-								<span class="flag-icon flag-icon-eu"></span>
-								{% elsif game.region == "USA, Europe" %}
-								<span class="flag-icon flag-icon-us"></span>&nbsp;
-								<span class="flag-icon flag-icon-eu"></span>
-								{% elsif game.region == "World" %}
-								<span class="flag-icon flag-icon-jp"></span>&nbsp;
-								<span class="flag-icon flag-icon-us"></span>&nbsp;
-								<span class="flag-icon flag-icon-eu"></span>
-								{% elsif game.region == "China" %}
-								<span class="flag-icon flag-icon-cn"></span>
-								{% elsif game.region == "Australia" %}
-								<span class="flag-icon flag-icon-au"></span>
-								{% elsif game.region == "Mexico" %}
-								<span class="flag-icon flag-icon-mx"></span>
-								{% elsif game.region == "Spain" %}
-								<span class="flag-icon flag-icon-es"></span>
-								{% elsif game.region == "Sweden" %}
-								<span class="flag-icon flag-icon-se"></span>
-								{% elsif game.region == "Germany" %}
-								<span class="flag-icon flag-icon-de"></span>
-								{% elsif game.region == "Korea" %}
-								<span class="flag-icon flag-icon-kr"></span>
-								{% elsif game.region == "Hong Kong" %}
-								<span class="flag-icon flag-icon-hk"></span>
-								{% elsif game.region == "Brazil" %}
-								<span class="flag-icon flag-icon-br"></span>
-								{% elsif game.region == "Taiwan" %}
-								<span class="flag-icon flag-icon-tw"></span>
-								{% elsif game.region == "Asia" %}
-								<span class="flag-icon flag-icon-cn"></span>&nbsp;
-								<span class="flag-icon flag-icon-hk"></span>&nbsp;
-								<span class="flag-icon flag-icon-jp"></span>&nbsp;
-								<span class="flag-icon flag-icon-kr"></span>&nbsp;
-								<span class="flag-icon flag-icon-tw"></span>&nbsp;
-								{% else %}
-								{{game.region}}
-								{% endif %} -->
 								{% include flags.html %}
 							</td>
 							<td class="version"> {{game.version}} </td>
