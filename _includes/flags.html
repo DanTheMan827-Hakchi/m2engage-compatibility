@@ -1,4 +1,6 @@
 
+{% elsif game.region == "Argentina" %}
+<span class="flag-icon flag-icon-ar">{{game.region}}</span>
 {% if game.region == "Asia" %}
 <span class="flag-icon flag-icon-cn">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-hk"></span>&nbsp;
@@ -56,7 +58,7 @@
 <span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
-{% elsif game.region == "Japn, USA, Europe" %}
+{% elsif game.region == "Japan, USA, Europe" %}
 <span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
@@ -64,6 +66,8 @@
 <span class="flag-icon flag-icon-kr">{{game.region}}</span>
 {% elsif game.region == "Mexico" %}
 <span class="flag-icon flag-icon-mx">{{game.region}}</span>
+{% elsif game.region == "Russia" %}
+<span class="flag-icon flag-icon-ru">{{game.region}}</span>
 {% elsif game.region == "Spain" %}
 <span class="flag-icon flag-icon-es">{{game.region}}</span>
 {% elsif game.region == "Sweden" %}
@@ -72,6 +76,13 @@
 <span class="flag-icon flag-icon-tw">{{game.region}}</span>
 {% elsif game.region == "USA" %}
 <span class="flag-icon flag-icon-us">{{game.region}}</span>
+{% elsif game.region == "USA, Asia" %}
+<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
+<span class="flag-icon flag-icon-cn"></span>&nbsp;
+<span class="flag-icon flag-icon-hk"></span>&nbsp;
+<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>&nbsp;
+<span class="flag-icon flag-icon-tw"></span>&nbsp;
 {% elsif game.region == "USA, Asia, Korea" %}
 <span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-cn"></span>&nbsp;
@@ -96,7 +107,7 @@
 <span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-eu"></span>
-{% elsif game.region == blank %}
+{% elsif game.region == "" %}
 -
 {% else %}
 {{game.region}}

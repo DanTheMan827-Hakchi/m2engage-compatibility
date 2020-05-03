@@ -22,7 +22,7 @@ layout: default
 			<div id="demo">
 				<table class="table table-bordered table-striped">
 					<thead class="thead-dark">
-						<tr>
+						<!-- <tr>
 							<th>Title</th>
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Region">Region</th>
@@ -32,10 +32,12 @@ layout: default
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Status">Status</th>
 							<th class="sorter-false filter-false">Notes</th>
-						</tr>
+						</tr> -->
+						{% include thead.html %}
 					</thead>
 					<tfoot>
-						<tr>
+						{% include tfoot.html %}
+						<!--	<tr>
 							<th>Title</th>
 							<th>Region</th>
 							<th>Version</th>
@@ -78,7 +80,7 @@ layout: default
 													title="Select page number"></select>
 								</div>
 							</th>
-						</tr>
+						</tr>-->
 					</tfoot>
 					<tbody>
 						{% for game in site.data.hacks %}
