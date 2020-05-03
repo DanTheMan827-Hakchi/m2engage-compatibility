@@ -86,13 +86,13 @@ layout: default
 							<td class="title">{{game.title}}</td>
 							<td class="region">
 								{% if game.region == "USA" %}
-								<span class="flag-icon flag-icon-us"></span>
+								<span class="flag-icon flag-icon-us">{{game.region}}</span>
 								{% elsif game.region == "Japan" %}
-								<span class="flag-icon flag-icon-jp"></span>
+								<span class="flag-icon flag-icon-jp">{{game.region}}</span>
 								{% elsif game.region == "Europe" %}
-								<span class="flag-icon flag-icon-eu"></span>
+								<span class="flag-icon flag-icon-eu">{{game.region}}</span>
 								{% elsif game.region == "USA, Europe" %}
-								<span class="flag-icon flag-icon-us"></span>&nbsp;
+								<span class="flag-icon flag-icon-us">{{game.region}}</span>&nbsp;
 								<span class="flag-icon flag-icon-eu"></span>
 								{% elsif game.region == "World" %}
 								<span class="flag-icon flag-icon-jp"></span>&nbsp;
