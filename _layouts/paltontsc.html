@@ -86,8 +86,17 @@ layout: default
 						{% for game in site.data.paltontsc %}
 						<tr>
 							<td class="title">{{game.title}}</td>
-							<td class="region">{{game.region}}
-								<!--<span class="flag-icon flag-icon-jp"></span>-->
+							<td class="region">
+								{% if game.region == "USA" %}
+								<!-- {{game.region}} -->
+								<span class="flag-icon flag-icon-us"></span>
+								{% elsif game.region == "Japan" %}
+								<span class="flag-icon flag-icon-jp"></span>
+								{% elsif game.region == "Brazil" %}
+								<span class="flag-icon flag-icon-br"></span>
+								{% else %}
+								{{game.region}}
+								{% endif %}
 							</td>
 							<td class="version"> {{game.version}} </td>
 							<td class="crc32">{{game.crc32}}</td>
