@@ -13,6 +13,8 @@
 <span class="flag-icon flag-icon-eu"></span>
 {% elsif game.region == "China" %}
 <span class="flag-icon flag-icon-cn"></span>
+{% elsif game.region == "France" %}
+<span class="flag-icon flag-icon-fr"></span>
 {% elsif game.region == "Australia" %}
 <span class="flag-icon flag-icon-au"></span>
 {% elsif game.region == "Mexico" %}
@@ -37,6 +39,19 @@
 <span class="flag-icon flag-icon-jp"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>&nbsp;
 <span class="flag-icon flag-icon-tw"></span>&nbsp;
+{% elsif game.region == "Europe, Asia" %}
+<span class="flag-icon flag-icon-eu"></span>&nbsp;
+<span class="flag-icon flag-icon-cn"></span>&nbsp;
+<span class="flag-icon flag-icon-hk"></span>&nbsp;
+<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>&nbsp;
+<span class="flag-icon flag-icon-tw"></span>
+{% elsif game.region == "Europe, Korea" %}
+<span class="flag-icon flag-icon-eu"></span>&nbsp;
+<span class="flag-icon flag-icon-kr"></span>
+{% elsif game.region == "Japan, Europe" %}
+<span class="flag-icon flag-icon-jp"></span>&nbsp;
+<span class="flag-icon flag-icon-eu"></span>
 {% else %}
 {{game.region}}
 {% endif %}
