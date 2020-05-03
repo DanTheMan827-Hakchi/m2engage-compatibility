@@ -56,6 +56,10 @@
 <span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-us"></span>&nbsp;
 <span class="flag-icon flag-icon-kr"></span>
+{% elsif game.region == "Japn, USA, Europe" %}
+<span class="flag-icon flag-icon-jp">{{game.region}}</span>&nbsp;
+<span class="flag-icon flag-icon-us"></span>&nbsp;
+<span class="flag-icon flag-icon-eu"></span>
 {% elsif game.region == "Korea" %}
 <span class="flag-icon flag-icon-kr">{{game.region}}</span>
 {% elsif game.region == "Mexico" %}
