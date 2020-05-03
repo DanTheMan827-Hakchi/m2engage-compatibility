@@ -24,7 +24,8 @@ layout: default
 					<thead class="thead-dark">
 						<tr>
 							<th>Title</th>
-							<th class="sorter-false filter-false">Region</th>
+							<th class="filter-select filter-exact"
+									data-placeholder="Filter by Region">Region</th>
 							<th class="filter-select filter-exact"
 									data-placeholder="Filter by Version">Version</th>
 							<th>CRC32</th>
@@ -85,10 +86,16 @@ layout: default
 							<td class="title">{{game.title}}</td>
 							<td class="region">
 								{% if game.region == "USA" %}
-								<!-- {{game.region}} -->
 								<span class="flag-icon flag-icon-us"></span>
 								{% elsif game.region == "Japan" %}
 								<span class="flag-icon flag-icon-jp"></span>
+								{% elsif game.region == "Europe" %}
+								<span class="flag-icon flag-icon-eu"></span>
+								{% elsif game.region == "USA, Europe" %}
+								<span class="flag-icon flag-icon-us"></span>&nbsp;
+								<span class="flag-icon flag-icon-eu"></span>
+								{% elsif game.region == "China" %}
+								<span class="flag-icon flag-icon-cn"></span>
 								{% elsif game.region == "Brazil" %}
 								<span class="flag-icon flag-icon-br"></span>
 								{% else %}
