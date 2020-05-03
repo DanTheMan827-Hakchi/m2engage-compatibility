@@ -3,6 +3,4 @@
 source 'https://rubygems.org'
 
 gemspec
-gem "rouge"
-gem "jekyll"
-gem "json"
+gem 'github-pages'
