@@ -4,45 +4,45 @@ layout: default
 
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap"
-		 class="outer">
-	<section id="main_content"
-					 class="inner">
-		<!-- {{ content }} -->
-		<!-- <div id="main"> -->
-		<!-- use the filter_reset : '.reset' option or include data-filter="" using the filter button demo code to reset the filters -->
-		<div class="bootstrap_buttons">
-			Reset filter : <button type="button"
-							class="reset btn btn-dark"
-							data-column="0"
-							data-filter="">Reset filters</button>
-			<br>
-			<!--Zebra widget : <button type="button" class="zebra btn btn-success"><span>enabled</span></button>
+     class="outer">
+    <section id="main_content"
+             class="inner">
+        <!-- {{ content }} -->
+        <!-- <div id="main"> -->
+        <!-- use the filter_reset : '.reset' option or include data-filter="" using the filter button demo code to reset the filters -->
+        <div class="bootstrap_buttons">
+            Reset filter : <button type="button"
+                    class="reset btn btn-dark"
+                    data-column="0"
+                    data-filter="">Reset filters</button>
+            <br>
+            <!--Zebra widget : <button type="button" class="zebra btn btn-success"><span>enabled</span></button>
 					        </div> -->
-			<br>
-			<div id="demo">
-				<table class="table table-bordered table-striped">
-					<thead class="thead-dark">
-						{% include thead.html %}
-					</thead>
-					<tfoot>
-						{% include tfoot.html %}
-					</tfoot>
-					<tbody>
-						{% for game in site.data.licensed %}
-						<tr>
-							<td class="title">{{game.title}}</td>
-							<td class="region">
-								{% include flags.html %}
-							</td>
-							<td class="version"> {{game.version}} </td>
-							<td class="crc32">{{game.crc32}}</td>
-							<td class="status">{{game.status}}</td>
-							<td> {{game.notes}} </td>
-						</tr>
-						{% endfor %}
-					</tbody>
-				</table>
-			</div>
-			<!-- </div> -->
-	</section>
+            <br>
+            <div id="demo">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        {% include theader.html %}
+                    </thead>
+                    <tfoot>
+                        {% include tfooter.html %}
+                    </tfoot>
+                    <tbody>
+                        {% for game in site.data.licensed %}
+                        <tr>
+                            <td class="title">{{game.title}}</td>
+                            <td class="region">
+                                {% include flags.html %}
+                            </td>
+                            <td class="version"> {{game.version}} </td>
+                            <td class="crc32">{{game.crc32}}</td>
+                            <td class="status">{{game.status}}</td>
+                            <td> {{game.notes}} </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- </div> -->
+    </section>
 </div>
