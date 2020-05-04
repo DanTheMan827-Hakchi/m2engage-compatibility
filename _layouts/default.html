@@ -2,194 +2,194 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
 <head>
-	<meta charset='utf-8'>
-	<meta http-equiv="X-UA-Compatible"
-				content="IE=edge">
-	<meta name="viewport"
-				content="width=device-width,maximum-scale=2">
-	<link rel="stylesheet"
-				type="text/css"
-				media="screen"
-				href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-	<!-- jQuery -->
-	<script src="{{ 'js/jquery-latest.min.js' | relative_url }}"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!-- jQuery -->
+    <script src="{{ 'js/jquery-latest.min.js' | relative_url }}"></script>
 
-	<!-- Demo stuff -->
-	<link rel="stylesheet"
-				href="{{'/assets/css/jq.css' | relative_url }}">
-	<link rel="stylesheet"
-				href="{{'/assets/css/bootstrap-v4.min.css' | relative_url }}">
-	<link href="{{'/assets/css/prettify.css' | relative_url }}"
-				rel="stylesheet">
-	<script src="{{'js/prettify.js' | relative_url }}"></script>
-	<script src="{{'js/docs.js' | relative_url }}"></script>
+    <!-- Demo stuff -->
+    <link rel="stylesheet"
+          href="{{'/assets/css/jq.css' | relative_url }}">
+    <link rel="stylesheet"
+          href="{{'/assets/css/bootstrap-v4.min.css' | relative_url }}">
+    <link href="{{'/assets/css/prettify.css' | relative_url }}"
+          rel="stylesheet">
+    <script src="{{'js/prettify.js' | relative_url }}"></script>
+    <script src="{{'js/docs.js' | relative_url }}"></script>
 
-	<!-- Tablesorter: required for bootstrap -->
-	<link rel="stylesheet"
-				href="{{'/assets/css/theme.bootstrap_4.css' | relative_url }}">
-	<script src="{{'js/jquery.tablesorter.js' | relative_url }}"></script>
-	<script src="{{'js/jquery.tablesorter.widgets.js' | relative_url }}"></script>
+    <!-- Tablesorter: required for bootstrap -->
+    <link rel="stylesheet"
+          href="{{'/assets/css/theme.bootstrap_4.css' | relative_url }}">
+    <script src="{{'js/jquery.tablesorter.js' | relative_url }}"></script>
+    <script src="{{'js/jquery.tablesorter.widgets.js' | relative_url }}"></script>
 
-	<!-- Tablesorter: optional -->
-	<link rel="stylesheet"
-				href="{{'addons/pager/jquery.tablesorter.pager.css' | relative_url }}">
-	<link rel="stylesheet"
-				href="{{'/assets/css/flag-icon.css' | relative_url }}">
-	<style>
-		.tablesorter-pager .btn-group-sm .btn {
-			font-size: 1.2em;
-		}
-	</style>
-	<script
-					src="{{'addons/pager/jquery.tablesorter.pager.js' | relative_url }}"></script>
+    <!-- Tablesorter: optional -->
+    <link rel="stylesheet"
+          href="{{'addons/pager/jquery.tablesorter.pager.css' | relative_url }}">
+    <link rel="stylesheet"
+          href="{{'/assets/css/flag-icon.css' | relative_url }}">
+    <style>
+        .tablesorter-pager .btn-group-sm .btn {
+            font-size: 1.2em;
+        }
+    </style>
+    <script src="{{'addons/pager/jquery.tablesorter.pager.js' | relative_url }}"></script>
 
-	<script id="js">$(function () {
+    <script id="js">$(function () {
 
-			$("table").tablesorter({
-				theme: "bootstrap",
+            $("table").tablesorter({
+                theme: "bootstrap",
 
-				widthFixed: false,
+                widthFixed: false,
 
-				// widget code contained in the jquery.tablesorter.widgets.js file
-				// use the zebra stripe widget if you plan on hiding any rows (filter widget)
-				// the uitheme widget is NOT REQUIRED!
-				widgets: ["filter", "columns", "zebra"],
+                // widget code contained in the jquery.tablesorter.widgets.js file
+                // use the zebra stripe widget if you plan on hiding any rows (filter widget)
+                // the uitheme widget is NOT REQUIRED!
+                widgets: ["filter", "columns", "zebra"],
 
-				widgetOptions: {
-					// using the default zebra striping class name, so it actually isn't included in the theme variable above
-					// this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
-					zebra: ["even", "odd"],
+                widgetOptions: {
+                    // using the default zebra striping class name, so it actually isn't included in the theme variable above
+                    // this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+                    zebra: ["even", "odd"],
 
-					// class names added to columns when sorted
-					columns: ["primary", "secondary", "tertiary"],
+                    // class names added to columns when sorted
+                    columns: ["primary", "secondary", "tertiary"],
 
-					// reset filters button
-					filter_reset: ".reset",
+                    // reset filters button
+                    filter_reset: ".reset",
 
-					// extra css class name (string or array) added to the filter element (input or select)
-					filter_cssFilter: [
-						'form-control',
-						'form-control',
-						'form-control custom-select', // select needs custom class names :(
-						'form-control',
-						'form-control',
-						'form-control',
-						'form-control'
-					]
+                    // extra css class name (string or array) added to the filter element (input or select)
+                    filter_cssFilter: [
+                        'form-control',
+                        'form-control',
+                        'form-control custom-select', // select needs custom class names :(
+                        'form-control',
+                        'form-control',
+                        'form-control',
+                        'form-control'
+                    ]
 
-				}
-			})
-				.tablesorterPager({
+                }
+            })
+                .tablesorterPager({
 
-					// target the pager markup - see the HTML block below
-					container: $(".ts-pager"),
+                    // target the pager markup - see the HTML block below
+                    container: $(".ts-pager"),
 
-					// target the pager page select dropdown - choose a page
-					cssGoto: ".pagenum",
+                    // target the pager page select dropdown - choose a page
+                    cssGoto: ".pagenum",
 
-					// remove rows from the table to speed up the sort of large tables.
-					// setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
-					removeRows: false,
+                    // remove rows from the table to speed up the sort of large tables.
+                    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+                    removeRows: false,
 
-					// output string - default is '{page}/{totalPages}';
-					// possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
-					output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+                    // output string - default is '{page}/{totalPages}';
+                    // possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+                    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
 
-				});
+                });
 
-		});</script>
+        });</script>
 
-	<script>
-		$(function () {
-			$('button.filter').click(function () {
-				var col = $(this).data('column'),
-					txt = $(this).data('filter');
-				$('table').find('.tablesorter-filter').val('').eq(col).val(txt);
-				$('table').trigger('search', false);
-				return false;
-			});
+    <script>
+        $(function () {
+            $('button.filter').click(function () {
+                var col = $(this).data('column'),
+                    txt = $(this).data('filter');
+                $('table').find('.tablesorter-filter').val('').eq(col).val(txt);
+                $('table').trigger('search', false);
+                return false;
+            });
 
-			// toggle zebra widget
-			$('button.zebra').click(function () {
-				var t = $(this).hasClass('btn-success');
-				$('table')
-					.toggleClass('table-striped')[0]
-					.config.widgets = (t) ? ["filter"] : ["filter", "zebra"];
-				$(this)
-					.toggleClass('btn-danger btn-success')
-					.find('span')
-					.text(t ? 'disabled' : 'enabled');
-				$('table').trigger('refreshWidgets', [false]);
-				return false;
-			});
-		});
-	</script>
-	{% seo %}
+            // toggle zebra widget
+            $('button.zebra').click(function () {
+                var t = $(this).hasClass('btn-success');
+                $('table')
+                    .toggleClass('table-striped')[0]
+                    .config.widgets = (t) ? ["filter"] : ["filter", "zebra"];
+                $(this)
+                    .toggleClass('btn-danger btn-success')
+                    .find('span')
+                    .text(t ? 'disabled' : 'enabled');
+                $('table').trigger('refreshWidgets', [false]);
+                return false;
+            });
+        });
+    </script>
+    {% seo %}
 </head>
 
 <body>
-	<!-- HEADER -->
-	<div id="header_wrap"
-			 class="outer">
-		<header class="inner">
-			<!-- {% if site.github.is_project_page %}
+    <!-- HEADER -->
+    <div id="header_wrap"
+         class="outer">
+        <header class="inner">
+            <!-- {% if site.github.is_project_page %}
 		            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
 		          {% endif %} -->
 
-			<h1 id="project_title">
-				{{ site.title | default: site.github.repository_name }}</h1>
-			<h2 id="project_tagline">
-				{{ site.description | default: site.github.project_tagline }}</h2>
+            <h1 id="project_title">
+                {{ site.title | default: site.github.repository_name }}</h1>
+            <h2 id="project_tagline">
+                {{ site.description | default: site.github.project_tagline }}</h2>
 
-			<section id="downloads">
-				<a class="btn btn-primary"
-					 href="{{ site.licensed }}">Licensed games</a>
-				<a class="btn btn-primary"
-					 href="{{ site.unlicensed }}">Unlicensed games</a>
-				<a class="btn btn-primary"
-					 href="{{ site.betas }}">Betas</a>
-				<a class="btn btn-primary"
-					 href="{{ site.translations }}">Translations</a>
-				<a class="btn btn-primary"
-					 href="{{ site.hacks }}">Hacks</a>
-				<a class="btn btn-primary"
-					 href="{{ site.paltontsc }}">60Hz</a>
+            <section id="downloads">
+                <a class="btn btn-primary"
+                   href="{{ site.licensed }}">Licensed games</a>
+                <a class="btn btn-primary"
+                   href="{{ site.unlicensed }}">Unlicensed games</a>
+                <a class="btn btn-primary"
+                   href="{{ site.betas }}">Betas</a>
+                <a class="btn btn-primary"
+                   href="{{ site.translations }}">Translations</a>
+                <a class="btn btn-primary"
+                   href="{{ site.hacks }}">Hacks</a>
+                <a class="btn btn-primary"
+                   href="{{ site.paltontsc }}">60Hz</a>
 
-			</section>
-		</header>
-	</div>
-	{{content}}
+            </section>
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap"
+         class="outer">
+        {{content}}
+    </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap"
+         class="outer">
+        <footer class="inner">
+            {% if site.github.is_project_page %}
+            <p class="copyright">
+                {{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+            </p>
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+            {% endif %}
+            <p class="copyright">
+                {{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+            </p>
+        </footer>
+    </div>
 
-	<!-- FOOTER  -->
-	<div id="footer_wrap"
-			 class="outer">
-		<footer class="inner">
-			{% if site.github.is_project_page %}
-			<p class="copyright">
-				{{ site.title | default: site.github.repository_name }} maintained by <a
-					 href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
-			</p>
-			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-			{% endif %}
-			<p class="copyright">
-				{{ site.title | default: site.github.repository_name }} maintained by <a
-					 href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
-			</p>
-		</footer>
-	</div>
-
-	{% if site.google_analytics %}
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-		ga('create', '{{ site.google_analytics }}', 'auto');
-		ga('send', 'pageview');
-	</script>
-	{% endif %}
+    {% if site.google_analytics %}
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    {% endif %}
 </body>
 
 </html>

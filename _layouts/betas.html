@@ -2,103 +2,94 @@
 layout: default
 ---
 
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap"
-		 class="outer">
-	<section id="main_content"
-					 class="inner">
-		<!-- {{ content }} -->
-		<!-- <div id="main"> -->
-		<!-- use the filter_reset : '.reset' option or include data-filter="" using the filter button demo code to reset the filters -->
-		<div class="bootstrap_buttons">
-			Reset filter : <button type="button"
-							class="reset btn btn-dark"
-							data-column="0"
-							data-filter="">Reset filters</button>
-			<br>
-			<!--Zebra widget : <button type="button" class="zebra btn btn-success"><span>enabled</span></button>
-				        </div> -->
-			<br>
-			<div id="demo">
-				<table class="table table-bordered table-striped">
-					<thead class="thead-dark">
-						<tr>
-							<th>Title</th>
-							<th class="filter-select filter-exact"
-									data-placeholder="Filter by Region">Region</th>
-							<th class="filter-select filter-exact"
-									data-placeholder="Filter by Version">Version</th>
-							<th class="sorter-false filter-false">Version date</th>
-							<th>CRC32</th>
-							<th class="filter-select filter-exact"
-									data-placeholder="Filter by Status">Status</th>
-							<th class="sorter-false filter-false">Notes</th>
-						</tr>
-					</thead>
-					<tfoot>
-						<tr>
-							<th>Title</th>
-							<th>Region</th>
-							<th>Language</th>
-							<th>Released By</th>
-							<th>CRC32</th>
-							<th>Status</th>
-							<th>Notes</th>
-						</tr>
-						<tr>
-							<th colspan="6"
-									class="ts-pager">
-								<div class="form-inline">
-									<div class="btn-group btn-group-sm mx-1"
-											 role="group">
-										<button type="button"
-														class="btn btn-secondary first"
-														title="first">&#8676;</button>
-										<button type="button"
-														class="btn btn-secondary prev"
-														title="previous">&larr;</button>
-									</div>
-									<span class="pagedisplay"></span>
-									<div class="btn-group btn-group-sm mx-1"
-											 role="group">
-										<button type="button"
-														class="btn btn-secondary next"
-														title="next">&rarr;</button>
-										<button type="button"
-														class="btn btn-secondary last"
-														title="last">&#8677;</button>
-									</div>
-									<select class="form-control-sm custom-select px-1 pagesize"
-													title="Select page size">
-										<option selected="selected"
-														value="10">10</option>
-										<option value="20">20</option>
-										<option value="30">30</option>
-										<option value="all">All Rows</option>
-									</select>
-									<select class="form-control-sm custom-select px-4 mx-1 pagenum"
-													title="Select page number"></select>
-								</div>
-							</th>
-						</tr>
-					</tfoot>
-					<tbody>
-						{% for game in site.data.betas %}
-						<tr>
-							<td class="title">{{game.title}}</td>
-							<td class="region">
-								{% include flags.html %}
-							</td>
-							<td class="language"> {{game.version}} </td>
-							<td>{{game.versiondate}}</td>
-							<td class="crc32">{{game.crc32}}</td>
-							<td class="status">{{game.status}}</td>
-							<td> {{game.notes}} </td>
-						</tr>
-						{% endfor %}
-					</tbody>
-				</table>
-			</div>
-			<!-- </div> -->
-	</section>
-</div>
+<section id="main_content"
+         class="inner">
+    <!-- use the filter_reset : '.reset' option or include data-filter="" using the filter button demo code to reset the filters -->
+    <div class="bootstrap_buttons">
+        Reset filter : <button type="button"
+                class="reset btn btn-dark"
+                data-column="0"
+                data-filter="">Reset filters</button>
+        <br>
+        <br>
+        <div id="demo">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Title</th>
+                        <th class="filter-select filter-exact"
+                            data-placeholder="Filter by Region">Region</th>
+                        <th class="filter-select filter-exact"
+                            data-placeholder="Filter by Version">Version</th>
+                        <th class="sorter-false filter-false">Version date</th>
+                        <th>CRC32</th>
+                        <th class="filter-select filter-exact"
+                            data-placeholder="Filter by Status">Status</th>
+                        <th class="sorter-false filter-false">Notes</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Title</th>
+                        <th>Region</th>
+                        <th>Language</th>
+                        <th>Released By</th>
+                        <th>CRC32</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <th colspan="6"
+                            class="ts-pager">
+                            <div class="form-inline">
+                                <div class="btn-group btn-group-sm mx-1"
+                                     role="group">
+                                    <button type="button"
+                                            class="btn btn-secondary first"
+                                            title="first">&#8676;</button>
+                                    <button type="button"
+                                            class="btn btn-secondary prev"
+                                            title="previous">&larr;</button>
+                                </div>
+                                <span class="pagedisplay"></span>
+                                <div class="btn-group btn-group-sm mx-1"
+                                     role="group">
+                                    <button type="button"
+                                            class="btn btn-secondary next"
+                                            title="next">&rarr;</button>
+                                    <button type="button"
+                                            class="btn btn-secondary last"
+                                            title="last">&#8677;</button>
+                                </div>
+                                <select class="form-control-sm custom-select px-1 pagesize"
+                                        title="Select page size">
+                                    <option selected="selected"
+                                            value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="all">All Rows</option>
+                                </select>
+                                <select class="form-control-sm custom-select px-4 mx-1 pagenum"
+                                        title="Select page number"></select>
+                            </div>
+                        </th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    {% for game in site.data.betas %}
+                    <tr>
+                        <td class="title">{{game.title}}</td>
+                        <td class="region">
+                            {% include flags.html %}
+                        </td>
+                        <td class="language"> {{game.version}} </td>
+                        <td>{{game.versiondate}}</td>
+                        <td class="crc32">{{game.crc32}}</td>
+                        <td class="status">{{game.status}}</td>
+                        <td> {{game.notes}} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+</section>
