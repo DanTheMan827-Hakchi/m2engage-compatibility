@@ -1,7 +1,6 @@
-
-{% elsif game.region == "Argentina" %}
+{% if game.region == "Argentina" %}
 <span class="flag-icon flag-icon-ar">{{game.region}}</span>
-{% if game.region == "Asia" %}
+{% elsif game.region == "Asia" %}
 <span class="flag-icon flag-icon-cn">{{game.region}}</span>&nbsp;
 <span class="flag-icon flag-icon-hk"></span>&nbsp;
 <span class="flag-icon flag-icon-jp"></span>&nbsp;
